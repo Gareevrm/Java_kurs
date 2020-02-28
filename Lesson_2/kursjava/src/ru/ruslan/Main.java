@@ -1,5 +1,6 @@
 package ru.ruslan;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -53,24 +54,27 @@ public class Main {
             }
         }*/
 
-        int [] param = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int [] param1 = new int [10];
-        int [] param2 = new int [10];
+        int [] param = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+        ArrayList a = new ArrayList();
+        ArrayList b = new ArrayList();
+
         //String [] param1 = new String [5];
         //int count = 0;
 
         for (int i=0; i<param.length; i++) {
 
             if (param[i] % 2 == 0) {
-                param1[i] = param[i];
-                System.out.print(param1[i] + " ");
-            } else if (param[i] % 3 == 0) {
-                param2[i] = param[i];
-                System.out.println(param2[i] + " ");
+                a.add (param [i]);
+            }
+            else if (param[i] % 3 == 0) {
+                b.add (param[i]);
+
             }
 
 
         }
+        System.out.println ("Тут четные числа = " + a + " ");
+        System.out.println ("Тут числа делённые на 3 = "+ b + " ");
         /*for (int i = 0 ; i < param.length; i ++){
             for (int j=0; j<param1.length;j++){
                 System.out.println(param[i] + " " + param1[j]);
